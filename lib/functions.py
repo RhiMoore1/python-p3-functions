@@ -29,7 +29,17 @@ def add(num1, num2):
 add(2,2)
 
 
+# def halve(number):
+#     return number / 2
+
+# halve(4)
+
 def halve(number):
+    if not isinstance(number, (float, int)):
+        return None
+
     return number / 2
 
-halve(4)
+result = halve(4)
+print(result)
+    
